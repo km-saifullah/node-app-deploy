@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   return res
     .status(200)
     .json({ status: true, message: "welcome to the test api" });
